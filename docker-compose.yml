@@ -1,10 +1,8 @@
-version: "3.9"  # Compose file version
-
 services:
   # React Frontend Service
   react-frontend:
-    image: react-frontend:latest      # Use the image you built for React
-    container_name: react-frontend   # Name of the container
+    image: react-frontend-full:latest      # Use the image you built for React
+    container_name: react-frontend-full   # Name of the container
     ports:
       - "3000:80"                    # Map host port 3000 to container port 80
     env_file:
@@ -15,8 +13,8 @@ services:
       - my_Network                   # Connect to custom network
   # .NET Backend Service
   csharp-backend:
-    image: csharp-backend:latest    # Use the image you built for .NET backend
-    container_name: csharp-backend  # Name of the container
+    image: csharp-backend-full:latest    # Use the image you built for .NET backend
+    container_name: csharp-backend-full  # Name of the container
     ports:
       - "8080:8080"                 # Map host port 8080 to container port 8080
     env_file:
@@ -37,5 +35,5 @@ services:
       - "1433:1433"                    # Expose SQL Server to host (optional)
 # Networks
 networks:
-  my_network:
+  my_Network:
     external: true                   # Use an already created Docker network
