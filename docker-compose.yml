@@ -31,8 +31,11 @@ services:
     container_name: sql1
     environment:
       ACCEPT_EULA: "Y"                # Must accept SQL Server license
+      SA_PASSWORD: "${SA_PASSWORD}"
     ports:
       - "1433:1433"                    # Expose SQL Server to host (optional)
+    volumes:
+    - sql1_volume:/var/opt/mssql   # Persist database data
     networks:
       - my_Network                   # Connect to same network as frontend & and backend
 # Networks
