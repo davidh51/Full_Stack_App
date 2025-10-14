@@ -33,6 +33,8 @@ services:
       ACCEPT_EULA: "Y"                # Must accept SQL Server license
     ports:
       - "1433:1433"                    # Expose SQL Server to host (optional)
+    networks:
+      - my_Network                   # Connect to same network as frontend & and backend
 # Networks
 networks:
   my_Network:
