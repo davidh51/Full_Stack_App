@@ -1,0 +1,18 @@
+# Node / React
+frontend/node_modules/
+frontend/build/
+frontend/npm-debug.log
+
+# .NET
+backend/bin/
+backend/obj/
+backend/*.user
+backend/*.vs
+
+# Docker / Env
+*.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
