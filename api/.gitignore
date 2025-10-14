@@ -1,0 +1,22 @@
+# Build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.vs/
+.vscode/
+
+# Logs
+*.log
+
+# Secrets
+appsettings.Secrets.json
+.env
+
+# Optional: Docker artifacts
+*.tar
+
+# OS files
+.DS_Store
+Thumbs.db
