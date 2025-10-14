@@ -42,3 +42,7 @@ services:
 networks:
   my_Network:
     external: true                   # Use an already created Docker network
+# Volumes
+volumes:
+  sql1_volume:
+    external: true                   # Use an already created Docker volume
