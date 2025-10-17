@@ -121,7 +121,7 @@ app.UseCors(x =>
                 .AllowCredentials()
                 .WithOrigins(
                                 "http://localhost:3000",         // host browser
-                                "http://192.168.2.18:3000",      // host via VM IP
+                                "http://192.168.99.129/:3000",      // host via VM IP
                                 "http://react-frontend:80"       // frontend container (if needed)
                             ) // for when deploying    
                 .SetIsOriginAllowed(origin => true) // allow any origin;
