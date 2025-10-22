@@ -20,3 +20,7 @@ appsettings.Secrets.json
 # OS files
 .DS_Store
 Thumbs.db
+
+# Ignore publish output
+/publish/
+/publish.zip
